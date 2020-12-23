@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.Toast
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
-
+// 自定义Snackbar https://www.jianshu.com/p/e023bfb6466b
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
