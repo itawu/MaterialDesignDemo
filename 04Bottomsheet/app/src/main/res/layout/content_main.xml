@@ -1,12 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <include layout="@layout/content_main" />
-    <include layout="@layout/content_bottom_sheet" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_expand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expand_BottomSheet"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_collapsed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Collapsed_BottomSheet"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_hide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hide_BottomSheet"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_bottomsheet_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BottomSheetDialog"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_bottomsheet_dialog_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BottomSheetDialogFragment"/>
+</LinearLayout>

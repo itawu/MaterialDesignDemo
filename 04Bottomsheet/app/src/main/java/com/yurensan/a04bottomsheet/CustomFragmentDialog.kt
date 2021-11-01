@@ -1,13 +1,13 @@
 package com.yurensan.a04bottomsheet
 
 import android.os.Bundle
-import android.support.design.widget.BottomSheetDialogFragment
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.wangshuai.androidui.R
+import androidx.annotation.Nullable
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import java.util.*
 
 /**
@@ -17,7 +17,7 @@ class CustomFragmentDialog : BottomSheetDialogFragment() {
     private val list = ArrayList<String>()
 
     @Nullable
-    fun onCreateView(
+    override fun onCreateView(
         inflater: LayoutInflater,
         @Nullable container: ViewGroup?,
         @Nullable savedInstanceState: Bundle?
