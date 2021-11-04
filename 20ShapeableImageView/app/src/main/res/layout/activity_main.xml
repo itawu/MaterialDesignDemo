@@ -6,13 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/img"
+        android:layout_marginTop="10dp"
+        app:shapeAppearanceOverlay="@style/circleImageStyle"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/img"
+        android:layout_marginTop="10dp"
+        app:shapeAppearanceOverlay="@style/roundedCornerImageStyle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img1" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/img"
+        android:layout_marginTop="10dp"
+        app:shapeAppearanceOverlay="@style/cutImageStyle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img2" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/img"
+        android:layout_marginTop="10dp"
+        app:shapeAppearanceOverlay="@style/diamondImageStyle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
